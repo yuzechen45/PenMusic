@@ -3,7 +3,7 @@
 有道词典笔 miniapp，基于 HaaS UI / falcon-ui（Vue 2.6.12）构建的**本地音乐播放器**。
 
 > ⚠️ **文档修复说明**
-> 本文档在 2026-10-01 被一次误操作损坏过，已用备份 + 自动恢复修回绝大部分。
+> 本文档在 2026-10-01 被蓝色大肥鱼「deepseek」一次误操作损坏过，已用备份 + 自动恢复修回绝大部分。
 > 事故原因：用 PowerShell 对 `ui/README.md` 做了 `Get-Content -Raw | Set-Content -Encoding UTF8` 的往返 —— UTF-8 被按系统 ANSI（GBK）解码，中文全变乱码，**每个对不上的字节都永久丢失**（连带着吃掉一些换行，少数标题、列表项被并到上一行）。
 > 讽刺的是，这份文档里本来就写着「别用 PowerShell 改源码」（见「四、构建」下面那条）。
 > 恢复方式（脚本都在 `.tools_tmp/`，一条命令 `node .tools_tmp/rebuild-readme.js` 重跑全流程）：
